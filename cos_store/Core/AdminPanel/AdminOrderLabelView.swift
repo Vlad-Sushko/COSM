@@ -68,7 +68,7 @@ struct AdminOrderLabelView: View {
                                 try await vm.changeOrderStatus(orderId: order.id, userId: order.userId, status: orderStatus)
                                 self.order = try await vm.getOrder(orderId: order.id)
                             } catch {
-                                print(error.localizedDescription)
+                                errorMessage = error.localizedDescription
                             }
                         }
                     }

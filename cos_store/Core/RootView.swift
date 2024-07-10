@@ -39,13 +39,13 @@ struct RootView: View {
                             .tag(3)
                         
                         ProfileView(isAuth: $isAuth)
-                            .tabItem { Label("Account", systemImage: "sidebar.squares.trailing")
-                            }
-                            .tag(4)
-                        
-//                        AdminPanel()
-//                            .tabItem { Label("Admin Panel", systemImage: "person.fill.viewfinder") }
-//                            .tag(5)
+                        .tabItem { Label("Account", systemImage: "sidebar.squares.trailing")
+                        }
+                        .tag(4)
+                    
+//                    AdminPanel()
+//                        .tabItem { Label("Admin Panel", systemImage: "person.fill.viewfinder") }
+//                        .tag(5)
                 }
                 .tabViewStyle(.automatic)
                 .tint(.accent)

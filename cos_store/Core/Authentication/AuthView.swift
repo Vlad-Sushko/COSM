@@ -226,7 +226,7 @@ extension AuthView {
     
     private var signUpWithEmailButton: some View {
         NavigationLink {
-            SignUpWithEmailView(authManager: AuthManager(), userManager: UserManager())
+            SignUpWithEmailView(authManager: AuthManager(), userManager: UserManager(), isAuth: $isAuth)
                 .padding(.horizontal, 12)
         } label: {
             HStack {

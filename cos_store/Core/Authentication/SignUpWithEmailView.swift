@@ -9,11 +9,15 @@ import SwiftUI
 
 struct SignUpWithEmailView: View {
     
+    @Environment(\.dismiss) var dismiss
+    
+    @Binding var isAuth: Bool
     @StateObject var vm: AuthViewModel
     @State private var errorMessage: String? = nil
     
-    init(authManager: AuthManager, userManager: UserManager) {
+    init(authManager: AuthManager, userManager: UserManager, isAuth: Binding<Bool>) {
         _vm = StateObject(wrappedValue: AuthViewModel(authManager: authManager, userManager: userManager))
+        self._isAuth = isAuth
     }
     
     var body: some View {
@@ -88,6 +92,8 @@ extension SignUpWithEmailView {
             Task {
                 do {
                     try await vm.registerUser(name: vm.name)
+                    isAuth = true
+                    dismiss()
                 } catch {
                     errorMessage = error.localizedDescription
                 }
@@ -108,6 +114,6 @@ extension SignUpWithEmailView {
 }
 
 #Preview {
-    SignUpWithEmailView(authManager: AuthManager(), userManager: UserManager())
+    SignUpWithEmailView(authManager: AuthManager(), userManager: UserManager(), isAuth: .constant(false))
         .padding()
 }

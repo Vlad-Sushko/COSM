@@ -39,7 +39,6 @@ extension Query {
         
         let listener = self.addSnapshotListener { querySnapshot, error in
             guard let documents = querySnapshot?.documents else {
-                print("Error Add Listener")
                 return
             }
             

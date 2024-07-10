@@ -12,7 +12,7 @@ struct Post1: View {
     @EnvironmentObject private var vm: RootViewModel
     
     @State var product: Product? = nil
-    let productId: String = DeveloperPreview.instance.productId
+    let productId: String = "87F5BA0A-DFA9-4EE3-A994-93B81EBFF528"
     
     @Binding var selectedTab: Int
     

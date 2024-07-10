@@ -28,8 +28,10 @@ final class AuthViewModel: ObservableObject {
             return
         }
         let authDataResult = try await authManager.createUser(email: email, password: password)
-        var user = DBUser(auth: authDataResult, name: name)
+        let user = DBUser(auth: authDataResult, name: name)
         try await userManager.createNewUser(user: user)
+        
+        try await authManager.loginUser(email: email, password: password)
         clearInputFields()
     }
     

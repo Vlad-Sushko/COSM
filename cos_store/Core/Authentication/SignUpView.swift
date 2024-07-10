@@ -48,7 +48,7 @@ struct SignUpView: View {
             })
             
             NavigationLink {
-                SignUpWithEmailView(authManager: AuthManager(), userManager: UserManager())
+                SignUpWithEmailView(authManager: AuthManager(), userManager: UserManager(), isAuth: $showAuthorizationView)
                     .padding(.horizontal, 12)
             } label: {
                 HStack {
