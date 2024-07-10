@@ -1,5 +1,7 @@
 Portofolio project [IOS SwiftUI developer]: 
 Cosmetic store using SwiftUI MVVM.
+
+* Swift Concurrency
 * Firebase Database/Storage/Authentication
 * Combine
 
