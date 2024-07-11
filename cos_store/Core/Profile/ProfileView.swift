@@ -211,7 +211,6 @@ extension ProfileView {
             
             Divider()
             
-            
             HStack {
                 Image(systemName: "person")
                 Text("Account")

@@ -40,6 +40,7 @@ final class AuthViewModel: ObservableObject {
             return
         }
         try await authManager.loginUser(email: email, password: password)
+        clearInputFields()
     }
     
     func clearInputFields() {
