@@ -30,7 +30,6 @@
 		8B1CFB582BD714E400BC4CFD /* UserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1CFB572BD714E400BC4CFD /* UserManager.swift */; };
 		8B1CFB5B2BD983C200BC4CFD /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1CFB5A2BD983C200BC4CFD /* ProfileViewModel.swift */; };
 		8B1CFB5D2BD983CC00BC4CFD /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1CFB5C2BD983CC00BC4CFD /* ProfileView.swift */; };
-		8B1CFB5F2BD9AADC00BC4CFD /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1CFB5E2BD9AADC00BC4CFD /* AccountView.swift */; };
 		8B1CFB632BD9B52B00BC4CFD /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1CFB622BD9B52B00BC4CFD /* SignUpView.swift */; };
 		8B1CFB652BDA510200BC4CFD /* SignUpWithEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1CFB642BDA510200BC4CFD /* SignUpWithEmailView.swift */; };
 		8B1CFB682BDABFE900BC4CFD /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 8B1CFB672BDABFE900BC4CFD /* GoogleSignIn */; };
@@ -103,7 +102,6 @@
 		8B1CFB572BD714E400BC4CFD /* UserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserManager.swift; sourceTree = "<group>"; };
 		8B1CFB5A2BD983C200BC4CFD /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		8B1CFB5C2BD983CC00BC4CFD /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
-		8B1CFB5E2BD9AADC00BC4CFD /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		8B1CFB622BD9B52B00BC4CFD /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		8B1CFB642BDA510200BC4CFD /* SignUpWithEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpWithEmailView.swift; sourceTree = "<group>"; };
 		8B1CFB6B2BDAC07500BC4CFD /* cos-store-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "cos-store-Info.plist"; sourceTree = SOURCE_ROOT; };
@@ -225,7 +223,6 @@
 		8B18BB0B2C19AB6100427777 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				8B1CFB5E2BD9AADC00BC4CFD /* AccountView.swift */,
 				8B5AEE7C2C13B54500DC92D9 /* OrdersView.swift */,
 				8B5AEE7E2C13B59600DC92D9 /* OrderLabelView.swift */,
 			);
@@ -605,7 +602,6 @@
 				8B4901E12C2428B500D0F921 /* DeliveryInformationLabelView.swift in Sources */,
 				8B5AEE7F2C13B59600DC92D9 /* OrderLabelView.swift in Sources */,
 				8B0237BF2BD3FDB4001BB365 /* AuthViewModel.swift in Sources */,
-				8B1CFB5F2BD9AADC00BC4CFD /* AccountView.swift in Sources */,
 				8B0EED172BE94837001DAC05 /* RootViewModel.swift in Sources */,
 				8BEC09612C05E013005D3CD5 /* ProductLabelView.swift in Sources */,
 				8B0EED1B2BE97B95001DAC05 /* Binding.swift in Sources */,

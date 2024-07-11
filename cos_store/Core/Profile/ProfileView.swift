@@ -39,11 +39,7 @@ struct ProfileView: View {
                         
                         Divider()
                         
-                        NavigationLink {
-                            AccountView()
-                        } label: {
-                            accountLabel
-                        }
+                       accountLabel
                     }
                     .foregroundStyle(.primary)
                     .padding()
@@ -215,15 +211,12 @@ extension ProfileView {
             
             Divider()
             
-            NavigationLink {
-                AccountView()
-            } label: {
-                HStack {
-                    Image(systemName: "person")
-                    Text("Account")
-                    Spacer()
-                    Image(systemName: "chevron.right")
-                }
+            
+            HStack {
+                Image(systemName: "person")
+                Text("Account")
+                Spacer()
+                Image(systemName: "chevron.right")
             }
         }
         .foregroundStyle(.primary)
