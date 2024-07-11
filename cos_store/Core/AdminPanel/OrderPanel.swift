@@ -103,7 +103,10 @@ struct OrderPanel: View {
                 }
                 .padding(.vertical)
             }
+
         }
+        .navigationTitle("Order Manager")
+        .navigationBarTitleDisplayMode(.inline)
         .refreshable {
             Task {
                 vm.getAllOrders
