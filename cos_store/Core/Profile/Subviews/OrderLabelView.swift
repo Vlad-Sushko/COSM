@@ -12,8 +12,8 @@ struct OrderLabelView: View {
     @EnvironmentObject private var vm: RootViewModel
     
     @State var order: Order
-    @State var product: Product? = nil
-    @State var showDetails: Bool = false
+    @State private var product: Product? = nil
+    @State private var showDetails: Bool = false
     
     var body: some View {
         VStack(alignment: .leading) {

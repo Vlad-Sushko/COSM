@@ -13,8 +13,8 @@ struct CartPositionView: View {
     
     var cartPosition: CartPosition
     
-    @State var product: Product? = nil
-    @State var quantity: Int = 1
+    @State private var product: Product? = nil
+    @State private var quantity: Int = 1
     
     
     var body: some View {

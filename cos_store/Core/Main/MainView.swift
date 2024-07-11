@@ -11,8 +11,8 @@ struct MainView: View {
     
     @EnvironmentObject private var vm: RootViewModel
     
-    @State var selectedBrand: RootViewModel.BrandOption = .all
-    @State var selectedCategory: RootViewModel.CategoryOption = .All
+    @State private var selectedBrand: RootViewModel.BrandOption = .all
+    @State private var selectedCategory: RootViewModel.CategoryOption = .All
     
     @Binding var selectedTab: Int
     

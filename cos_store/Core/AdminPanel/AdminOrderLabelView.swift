@@ -12,12 +12,12 @@ struct AdminOrderLabelView: View {
     
     @StateObject private var vm: OrderPanelViewModel
     
-    @State var product: Product? = nil
+    @State private var product: Product? = nil
     @State private var showDetails: Bool = false
     @State private var orderStatus: String = Order.OrderStatus.canceled.rawValue
     
     @State private var errorMessage: String? = nil
-    @State var showConfirmationDialog: Bool = false
+    @State private var showConfirmationDialog: Bool = false
     
     @Binding var order: Order
     

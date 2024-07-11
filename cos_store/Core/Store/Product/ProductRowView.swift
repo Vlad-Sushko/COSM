@@ -12,7 +12,7 @@ struct ProductRowView: View {
     @EnvironmentObject var vm: RootViewModel
     
     var product: Product
-    @State var isFavorite: Bool = false
+    @State private var isFavorite: Bool = false
     
     var body: some View {
         VStack {

@@ -13,8 +13,8 @@ struct ProductView: View {
     
     @EnvironmentObject var vm: RootViewModel
     
-    @State var quantity: Int = 1
-    @State var isFavorite: Bool = false
+    @State private var quantity: Int = 1
+    @State private var isFavorite: Bool = false
     @State private var errorMessage: String? = nil
     
     var body: some View {

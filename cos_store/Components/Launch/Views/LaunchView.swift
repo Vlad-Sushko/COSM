@@ -13,7 +13,7 @@ struct LaunchView: View {
     
     @Binding var showLaunchView: Bool
     
-    @State var scaleEffect: Bool = true
+    @State private var scaleEffect: Bool = true
     private let timer = Timer.publish(every: 1.5, on: .main, in: .common).autoconnect()
     @State private var loops: Int = 0
     
