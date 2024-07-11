@@ -21,7 +21,6 @@ struct SignUpView: View {
                     Image(systemName: "apple.logo")
                         .font(.title)
                     Text("Continue with Apple")
-                    
                 }
                 .foregroundStyle(.white)
                 .frame(maxWidth: .infinity)
@@ -38,7 +37,6 @@ struct SignUpView: View {
                         .frame(width: 20)
                         .frame(maxWidth: 30)
                     Text("Continue with Google")
-                    
                 }
                 .foregroundStyle(.black)
                 .frame(maxWidth: .infinity)
@@ -55,7 +53,6 @@ struct SignUpView: View {
                     Image(systemName: "envelope")
                         .font(.title3)
                     Text("Sign up with email")
-                    
                 }
                 .foregroundStyle(.black)
                 .frame(maxWidth: .infinity)
