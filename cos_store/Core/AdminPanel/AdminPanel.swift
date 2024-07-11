@@ -10,25 +10,27 @@ import SwiftUI
 struct AdminPanel: View {
     
     var body: some View {
-        VStack {
-            Divider()
-            
-            NavigationLink(destination: OrderPanel(vm: OrderPanelViewModel(
-                storageManager: StorageManager(),
-                productManager: ProductManager(),
-                orderManager: OrderManager()))) {
-                    ordersManagerLabel
+        NavigationStack {
+            VStack {
+                Divider()
+                
+                NavigationLink(destination: OrderPanel(vm: OrderPanelViewModel(
+                    storageManager: StorageManager(),
+                    productManager: ProductManager(),
+                    orderManager: OrderManager()))) {
+                        ordersManagerLabel
+                    }
+                Divider()
+                
+                NavigationLink(destination: ProductsPanel()) {
+                    productsManagerLabel
                 }
-            Divider()
-            
-            NavigationLink(destination: ProductsPanel()) {
-                productsManagerLabel
+                Divider()
+                Spacer()
             }
-            Divider()
-            Spacer()
-        }
-        .padding(.horizontal)
+            .padding(.horizontal)
         .navigationTitle("Admin Panel")
+        }
     }
 }
 
