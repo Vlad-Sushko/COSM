@@ -136,6 +136,7 @@ extension AuthView {
     private var textFieldsSections: some View {
         VStack {
             TextField("Email..", text: $vm.email)
+                .textInputAutocapitalization(.never)
                 .padding()
                 .background(.grayBG)
                 .clipShape(.rect(cornerRadius: 10))
