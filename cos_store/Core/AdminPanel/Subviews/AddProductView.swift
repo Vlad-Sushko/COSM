@@ -15,17 +15,17 @@ struct AddProductView: View {
     
     @State private var imageData: Data? = nil
     @State private var errorMessage: String? = nil
-    @State var showSuccessView: Bool = false
-    @State var showSuccessAnimation: Bool = false
+    @State private var showSuccessView: Bool = false
+    @State private var showSuccessAnimation: Bool = false
     
-    @State var title: String = ""
-    @State var brand: RootViewModel.BrandOption.RawValue = ""
-    @State var category: RootViewModel.CategoryOption.RawValue = ""
-    @State var description: String = ""
-    @State var price: Double = 00.00
-    @State var weight: String = ""
-    @State var ingridients: String = ""
-    @State var manufacturer: String = ""
+    @State private var title: String = ""
+    @State private var brand: RootViewModel.BrandOption.RawValue = ""
+    @State private var category: RootViewModel.CategoryOption.RawValue = ""
+    @State private var description: String = ""
+    @State private var price: Double = 00.00
+    @State private var weight: String = ""
+    @State private var ingridients: String = ""
+    @State private var manufacturer: String = ""
     
     
     init(vm: ProductsPanelViewModel) {

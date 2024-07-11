@@ -14,8 +14,8 @@ struct ProfileView: View {
     @Binding var isAuth: Bool
     
     @State private var errorMessage: String? = nil
-    @State var showAuthorizationView: Bool = false
-    @State var showConfirmationDialog: Bool = false
+    @State private var showAuthorizationView: Bool = false
+    @State private var showConfirmationDialog: Bool = false
     
     var body: some View {
         NavigationStack {

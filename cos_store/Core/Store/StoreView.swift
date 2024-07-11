@@ -11,9 +11,9 @@ struct StoreView: View {
     
     @EnvironmentObject private var vm: RootViewModel
     
-    @State var searchText: String = ""
-    @State var showSortPopover: Bool = false
-    @State var showCategorySheet: Bool = false
+    @State private var searchText: String = ""
+    @State private var showSortPopover: Bool = false
+    @State private var showCategorySheet: Bool = false
     @State private var errorMessage: String? = nil
     
     var body: some View {

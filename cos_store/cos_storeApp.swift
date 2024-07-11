@@ -12,8 +12,8 @@ import UserNotifications
 
 @main
 struct cos_storeApp: App {
-    @State var showLaunchView: Bool = true
-    @State var isAuth: Bool = false
+    @State private var showLaunchView: Bool = true
+    @State private var isAuth: Bool = false
     
     let authManager = AuthManager()
     

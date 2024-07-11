@@ -12,10 +12,10 @@ struct CheckoutView: View {
     @EnvironmentObject var vm: RootViewModel
     @Environment(\.dismiss) var dismiss
     
-    @State var deliveryInformation: DeliveryInformation? = nil
+    @State private var deliveryInformation: DeliveryInformation? = nil
     @State private var errorMessage: String? = nil
     
-    @State var isOrdedReceived: Bool = false
+    @State private var isOrdedReceived: Bool = false
     @Binding var showConfirmationView: Bool
     
     var body: some View {

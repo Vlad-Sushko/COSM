@@ -14,7 +14,7 @@ struct ProductImageView: View {
     
     @State var imageSize: ImageSize
     
-    @State private var imageData: Data? = nil
+    @State var imageData: Data? = nil
     
     enum ImageSize {
         case small

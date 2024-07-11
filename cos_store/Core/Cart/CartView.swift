@@ -11,7 +11,7 @@ struct CartView: View {
     
     @EnvironmentObject private var vm: RootViewModel
     @Binding var selectedTab: Int
-    @State var showConfirmationView: Bool = false
+    @State private var showConfirmationView: Bool = false
     
     init(selectedTab: Binding<Int>) {
         self._selectedTab = selectedTab

@@ -12,7 +12,7 @@ struct RootView: View {
     @StateObject private var vm = RootViewModel()
     
     @Binding var isAuth: Bool
-    @State var selectedTab: Int = 0
+    @State private var selectedTab: Int = 0
 
     var body: some View {
         ZStack {
