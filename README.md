@@ -1,3 +1,6 @@
+Short project video demonstration
+https://youtu.be/AI-LkoJw3Fc
+
 Portofolio project [IOS SwiftUI developer]: 
 Cosmetic store using SwiftUI MVVM.
 
