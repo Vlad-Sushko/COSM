@@ -79,6 +79,7 @@ final class ProductManager {
             .order(by: Product.CodingKeys.price.rawValue, descending: descending)
     }
     
+    // TODO: FIX BUG [Sorting by price does not include the discount price]
     private func getProductsByPriceAndBrandQuery(descending: Bool, selectedBrand: String) -> Query {
         productsCollection
             .whereField(Product.CodingKeys.brand.rawValue, isEqualTo: selectedBrand)
